@@ -1,7 +1,6 @@
 import os
 import torch
 from PIL import Image
-import matplotlib.pyplot as plt
 
 from .face_detector import FaceDetector
 from .dataset import get_eval_transforms
@@ -112,6 +111,7 @@ def predict_single_image(image_path, model_path="best_model_rebuilt", device=Non
     print("=" * 55 + "\n")
 
     if show and os.path.exists(image_path):
+        import matplotlib.pyplot as plt
         img = Image.open(image_path).convert("RGB")
         plt.figure(figsize=(6, 6))
         plt.imshow(img)

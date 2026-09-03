@@ -11,7 +11,12 @@ from .dataset import (
 )
 from .model import build_efficientnet_b3, load_model_weights
 from .inference import predict_single_image, DeepFakePredictor
-from .train import train_one_epoch, validate_one_epoch, evaluate_classifier
+
+# Training utilities (only available when sklearn/tqdm are installed)
+try:
+    from .train import train_one_epoch, validate_one_epoch, evaluate_classifier
+except ImportError:
+    pass
 
 __all__ = [
     "FaceDetector",

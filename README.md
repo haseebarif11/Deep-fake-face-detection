@@ -1,3 +1,16 @@
+---
+title: DeepFake Face Detection
+emoji: 🕵️
+colorFrom: purple
+colorTo: blue
+sdk: gradio
+sdk_version: "5.26.0"
+app_file: app.py
+pinned: true
+license: mit
+short_description: EfficientNet-B3 + MTCNN forensic deepfake detector
+---
+
 <div align="center">
 
 # 🕵️‍♂️ DeepFake Face Detection
