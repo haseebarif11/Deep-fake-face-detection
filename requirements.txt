@@ -1,0 +1,8 @@
+# DeepFake Face Detection - Space Dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+gradio>=4.0.0
+facenet-pytorch>=2.5.0
+pillow>=9.0.0
+numpy>=1.22.0
+scikit-learn>=1.0.0
